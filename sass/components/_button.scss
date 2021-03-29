@@ -2,10 +2,14 @@
     width: 16rem;
     height: 5rem;
     padding: 1rem 2rem; 
+    border: none;
+    cursor: pointer;
+    border-radius: .6rem;
 
-    &:active, &:link { 
+    &:active, &:hover { 
         outline: none;
     }
+
 
     &--white { 
         background: $color-white;

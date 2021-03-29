@@ -87,9 +87,16 @@ body {
 .btn {
   width: 16rem;
   height: 5rem;
-  padding: 1rem 2rem; }
-  .btn:active, .btn:link {
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: .6rem; }
+  .btn:active, .btn:hover {
     outline: none; }
+  .btn--white {
+    background: #FFFFFF;
+    text-align: center;
+    color: #D52047; }
 
 .main {
   position: relative;

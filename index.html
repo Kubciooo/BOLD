@@ -1,50 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cloudbudget</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap" rel="stylesheet" />
-  <title>Cloudbudget</title>
-</head>
-
-<body>
-  <section class="main">
-    <header class="header">
-      <div class="logo">
-        <svg class="logo__icon">
-          <use href="img/svg/sprite.svg#logo"></use>
-        </svg>
-        <p class="logo__text">CloudBudget</p>
+  <body>
+    <section class="main">
+      <header class="header">
+        <div class="logo">
+          <svg class="logo__icon">
+            <use href="img/svg/sprite.svg#logo"></use>
+          </svg>
+          <p class="logo__text">CloudBudget</p>
+        </div>
+        <div class="burger"></div>
+        <nav class="navigation navigation--closed">
+          <ul class="navigation__items">
+            <li class="navigation__item navigation__item--active">overview</li>
+            <li class="navigation__item">features</li>
+            <li class="navigation__item">technology</li>
+            <li class="navigation__item">contact</li>
+            <li class="navigation__item">sign up</li>
+          </ul>
+        </nav>
+      </header>
+      <div class="main__content">
+        <h1 class="main-heading">CloudBudget</h1>
+        <p class="main__content__text">
+          Cloud budget management for everyone. Only €69.95 a Month After a 7
+          Day Trial of Up to €4.99
+        </p>
+        <button class="btn btn--white">SIGN UP</button>
       </div>
-      <div class="burger"></div>
-      <nav class="navigation navigation--closed">
-        <ul class="navigation__items">
-          <li class="navigation__item navigation__item--active">overview</li>
-          <li class="navigation__item">features</li>
-          <li class="navigation__item">technology</li>
-          <li class="navigation__item">contact</li>
-          <li class="navigation__item">sign up</li>
-        </ul>
-      </nav>
-    </header>
-    <div class="main__content">
-      <h1 class="main-heading">CloudBudget</h1>
-      <p class="main__content__text">
-        Cloud budget management for everyone. Only €69.95 a Month After a 7 Day Trial of
-        Up to €4.99
-      </p>
-      <button class="btn btn--white">SIGN UP</button>
-    </div>
-
-  </section>
-  <section class="features">Features</section>
-  <section class="technology">Technology</section>
-  <section class="moeny">Stay focused on saving money</section>
-  <section class="contact">Contact</section>
-</body>
-
+    </section>
+    <section class="features">
+      <h2 class="section-heading">Features</h2>
+      <div class="feature__items">
+        <div class="feature__item">
+          <img
+            src="img/feature-1.png"
+            alt="Money in hands"
+            class="feature__img"
+          />
+          <div class="feature__content">
+            <h3 class="heading-3">Supports All Currencies and Cards</h3>
+            <p class="paragraph-sm">
+              We support all popular currencies and is fully customizable to add
+            </p>
+          </div>
+        </div>
+        <div class="feature__item">
+          <img
+            src="img/feature-2.png"
+            alt="Writing on phone"
+            class="feature__img"
+          />
+          <div class="feature__content">
+            <h3 class="heading-3">Manage your expenses on the go</h3>
+            <p class="paragraph-sm">
+              You can access your account from anywhere in the world on any
+              device
+            </p>
+          </div>
+        </div>
+        <div class="feature__item">
+          <img src="img/feature-3.png" alt="A corridor" class="feature__img" />
+          <div class="feature__content">
+            <h3 class="heading-3">Cloud Budget Management Software</h3>
+            <p class="paragraph-sm">
+              Our software is made so you can access and manage your budget
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="technology">Technology</section>
+    <section class="moeny">Stay focused on saving money</section>
+    <section class="contact">Contact</section>
+  </body>
 </html>
