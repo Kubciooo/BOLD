@@ -1,0 +1,8 @@
+@mixin respond($resolution) {
+    @if $resolution = tab-sm { //tablet small 
+        @media screen and (max-width: 37.5em) {
+            
+        }
+    }
+    
+}

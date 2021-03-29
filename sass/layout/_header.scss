@@ -1,0 +1,23 @@
+.header { 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+
+    .logo { 
+        display: flex; 
+        align-items: center;
+
+        &__icon { 
+            width: 3rem; 
+            height: 3rem; 
+            margin-right: .6rem;
+        }
+
+        &__text { 
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: $color-white; 
+            text-transform: uppercase;
+        }
+    }
+}
