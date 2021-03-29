@@ -26,20 +26,19 @@
     text-align: center;
 
     @include respond(tab-land) {
-        text-align: left;
-      }
+      text-align: left;
+    }
     @include respond(laptop) {
       font-size: 3.6rem;
     }
   }
 
   &__description {
-      justify-self: center;
+    justify-self: center;
     font-size: 1.2rem;
     line-height: 1.5;
     text-align: center;
     color: white;
-
 
     @include respond(tab-land) {
       text-align: justify;
@@ -57,8 +56,7 @@
     justify-self: center;
 
     @include respond(tab-land) {
-    justify-self: left;
-
+      justify-self: left;
     }
   }
 
@@ -96,6 +94,7 @@
 }
 
 .download__icon {
+  cursor: pointer;
   width: 3.2rem;
   height: 3.2rem;
 }

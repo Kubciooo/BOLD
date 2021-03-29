@@ -208,6 +208,7 @@ body {
       opacity: 0.5; }
 
 .download__icon {
+  cursor: pointer;
   width: 3.2rem;
   height: 3.2rem; }
 
