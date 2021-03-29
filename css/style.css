@@ -112,7 +112,7 @@ body {
     grid-gap: 3rem;
     justify-content: center;
     justify-items: center; }
-    @media only screen and (min-width: 75em) {
+    @media only screen and (min-width: 56.25em) {
       .technology__items {
         grid-template-columns: 1fr 1fr; } }
     @media only screen and (min-width: 87.5em) {
@@ -137,34 +137,59 @@ body {
 
 .money {
   background-color: #ED4C5C;
-  padding: 12rem 16.5rem;
+  padding: 4rem;
   display: grid;
   justify-content: space-between;
   align-content: center;
-  gap: 3rem; }
-  @media only screen and (min-width: 87.5em) {
+  align-items: center;
+  gap: 4rem; }
+  @media only screen and (min-width: 56.25em) {
+    .money {
+      padding: 12rem 16rem; } }
+  @media only screen and (min-width: 75em) {
     .money {
       grid-template-columns: repeat(2, 1fr);
       grid-auto-flow: column;
-      grid-template-rows: repeat(3, max-content); } }
+      grid-template-rows: repeat(3, max-content);
+      column-gap: 6rem; } }
   .money__heading {
     color: #FFFFFF;
     font-weight: 600;
-    font-size: 3.6rem; }
+    font-size: 3rem;
+    text-align: center; }
+    @media only screen and (min-width: 75em) {
+      .money__heading {
+        text-align: left; } }
+    @media only screen and (min-width: 87.5em) {
+      .money__heading {
+        font-size: 3.6rem; } }
   .money__description {
-    font-size: 1.4rem;
+    justify-self: center;
+    font-size: 1.2rem;
     line-height: 1.5;
-    text-align: justify;
+    text-align: center;
     color: white; }
+    @media only screen and (min-width: 75em) {
+      .money__description {
+        text-align: justify; } }
+    @media only screen and (min-width: 87.5em) {
+      .money__description {
+        font-size: 1.4rem; } }
   .money__downloads {
     display: flex;
     width: 13.5rem;
-    justify-content: space-between; }
+    justify-content: space-between;
+    justify-self: center; }
+    @media only screen and (min-width: 75em) {
+      .money__downloads {
+        justify-self: left; } }
   .money__images {
     position: relative;
-    height: 27rem; }
-    @media only screen and (min-width: 87.5em) {
+    height: 16rem;
+    grid-row: 4 / 5; }
+    @media only screen and (min-width: 75em) {
       .money__images {
+        height: 25rem;
         grid-row: 1 / span 3; } }
   .money__img {
     position: absolute;
@@ -174,13 +199,13 @@ body {
     transform: translateX(-50%); }
     .money__img--1 {
       left: 40%;
-      opacity: .5; }
+      opacity: 0.5; }
     .money__img--2 {
       z-index: 1;
       transform: translateX(-50%) scale(1.1); }
     .money__img--3 {
       left: 60%;
-      opacity: .5; }
+      opacity: 0.5; }
 
 .download__icon {
   width: 3.2rem;
