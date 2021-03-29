@@ -27,10 +27,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 3rem;
-        width: 26rem;
-        height: 22rem;
+        // width: 26rem;
+        // height: 22rem;
+    }
 
+    &__text { 
+        width: 60%;
     }
 
     &__icon {
@@ -43,10 +45,7 @@
         font-size: 10rem;
         color: $color-grey-dark;
         opacity: .08; 
-        line-height: 0;
-
+        line-height: .1;
         margin-top: 5rem;
-
-
     }
 }

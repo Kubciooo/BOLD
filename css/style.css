@@ -36,7 +36,8 @@ body {
   font-size: 1.8rem;
   font-weight: 700;
   text-align: center;
-  color: #101010; }
+  color: #101010;
+  margin-bottom: 1rem; }
 
 .paragraph-sm {
   font-size: 1.2rem;
@@ -120,10 +121,9 @@ body {
   .technology__item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 3rem;
-    width: 26rem;
-    height: 22rem; }
+    align-items: center; }
+  .technology__text {
+    width: 60%; }
   .technology__icon {
     width: 8rem;
     height: 8rem;
@@ -132,7 +132,7 @@ body {
     font-size: 10rem;
     color: #101010;
     opacity: .08;
-    line-height: 0;
+    line-height: .1;
     margin-top: 5rem; }
 
 .burger {
