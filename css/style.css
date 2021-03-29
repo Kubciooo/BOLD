@@ -100,6 +100,18 @@ body {
       font-size: 1.2rem;
       font-weight: 700; }
 
+.technology__items {
+  display: flex; }
+
+.technology__item {
+  display: flex;
+  flex-direction: column; }
+
+.technology__icon {
+  width: 8rem;
+  height: 8rem;
+  fill: #D52047; }
+
 .burger {
   position: relative;
   height: 2px;
