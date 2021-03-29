@@ -1,6 +1,5 @@
 .burger { 
     position: relative;
-
     height: 2px;
     width: 3rem;
     background-color: $color-white;
@@ -25,18 +24,24 @@
     position: absolute;
     top: 0; 
     left: 0;
+    height: 100vh;
+    width: 100vw;
 
     &__items { 
         list-style: none;
+        height: 100%;
+        width: 100%;
+        background-color: $color-primary;
 
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     &__item { 
         color: $color-white; 
-        margin: 0 1rem;
+        margin: 2rem 0;
         font-size: 1.4rem;
         text-transform: uppercase;
         font-weight: 300;
@@ -45,7 +50,6 @@
             font-weight: 700;
         }
     }
-
 
     &--closed { 
         display: none; 

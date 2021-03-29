@@ -1,0 +1,15 @@
+.main-heading {
+    font-size: 3rem;
+    letter-spacing: 0.05em;
+    color: $color-white; 
+    text-transform: uppercase;
+
+    @include respond(tab-port) { 
+        font-size: 6rem;            
+    }
+
+    @include respond(tab-land) {
+        font-size: 7rem; 
+    }
+} 
+$main-header-desktop: 7.2rem; 

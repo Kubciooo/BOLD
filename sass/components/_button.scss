@@ -1,0 +1,16 @@
+.btn { 
+    width: 16rem;
+    height: 5rem;
+    padding: 1rem 2rem; 
+
+    &:active, &:link { 
+        outline: none;
+    }
+
+    &--white { 
+        background: $color-white;
+        text-align: center;
+        color: $color-primary;
+    }
+
+}
