@@ -33,6 +33,7 @@
     text-align: center;
 
     @include respond(tab-port) {
+      width: 85%;
       text-align: justify;
       grid-row: 2 / 3;
       grid-column: 1 / 2;
@@ -41,7 +42,8 @@
 
   &__form {
     display: grid;
-    gap: 2rem;
+    row-gap: 2.4rem;
+    column-gap: 3rem; 
     width: 100%;
     justify-self: center;
     grid-template-columns: 1fr;

@@ -1,12 +1,12 @@
 @keyframes first-to-second-slide {
   from {
-    left: 40%; }
+    left: 35%; }
   to {
-    left: 60%; } }
+    left: 65%; } }
 
 @keyframes second-to-third-slide {
   from {
-    left: 60%;
+    left: 65%;
     opacity: 0.5;
     z-index: 0;
     transform: translateX(-50%) scale(1); }
@@ -14,16 +14,16 @@
     left: 50%;
     opacity: 1;
     z-index: 1;
-    transform: translate(-50%) scale(1.1); } }
+    transform: translate(-50%) scale(1.15); } }
 
 @keyframes third-to-first-slide {
   from {
     left: 50%;
     opacity: 1;
     z-index: 1;
-    transform: translate(-50%) scale(1.1); }
+    transform: translate(-50%) scale(1.15); }
   to {
-    left: 40%;
+    left: 35%;
     opacity: 0.5;
     z-index: 0;
     transform: translate(-50%) scale(1); } }
@@ -164,7 +164,7 @@ body {
     flex-direction: column;
     align-items: center; }
   .technology__text {
-    width: 60%; }
+    width: 75%; }
   .technology__icon {
     height: 5.5rem;
     width: 6rem;
@@ -184,7 +184,7 @@ body {
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  gap: 4rem; }
+  row-gap: 4rem; }
   @media only screen and (min-width: 56.25em) {
     .money {
       padding: 12rem 16rem; } }
@@ -193,7 +193,11 @@ body {
       grid-template-columns: repeat(2, 1fr);
       grid-auto-flow: column;
       grid-template-rows: repeat(3, max-content);
-      column-gap: 6rem; } }
+      column-gap: 7rem;
+      row-gap: 0; } }
+  @media only screen and (min-width: 87.5em) {
+    .money {
+      padding: 12rem 21.5rem 12rem 16.5rem; } }
   .money__heading {
     color: #FFFFFF;
     font-weight: 600;
@@ -201,7 +205,9 @@ body {
     text-align: center; }
     @media only screen and (min-width: 75em) {
       .money__heading {
-        text-align: left; } }
+        text-align: left;
+        width: 80%;
+        align-self: start; } }
     @media only screen and (min-width: 87.5em) {
       .money__heading {
         font-size: 3.6rem; } }
@@ -216,8 +222,11 @@ body {
         width: 60%; } }
     @media only screen and (min-width: 75em) {
       .money__description {
-        width: 100%;
-        text-align: justify; } }
+        width: 87%;
+        margin-bottom: 4rem;
+        margin-top: 2.4rem;
+        text-align: justify;
+        justify-self: left; } }
     @media only screen and (min-width: 87.5em) {
       .money__description {
         font-size: 1.4rem; } }
@@ -233,12 +242,13 @@ body {
     position: relative;
     height: 16rem;
     justify-self: center;
-    width: 80%;
+    width: 100%;
     grid-row: 4 / 5;
     transition: all 0.2s; }
     @media only screen and (min-width: 75em) {
       .money__images {
         height: 25rem;
+        justify-self: left;
         grid-row: 1 / span 3; } }
   .money__img {
     position: absolute;
@@ -249,20 +259,20 @@ body {
     transition: all 0.2s;
     cursor: pointer; }
     .money__img--1 {
-      left: 40%;
+      left: 35%;
       opacity: 0.5; }
     .money__img--3 {
       z-index: 1;
-      transform: translateX(-50%) scale(1.1); }
+      transform: translateX(-50%) scale(1.15); }
     .money__img--2 {
-      left: 60%;
+      left: 65%;
       opacity: 0.5; }
     .money__img--slide-1-to-2 {
-      animation: first-to-second-slide .5s ease-in-out forwards; }
+      animation: first-to-second-slide 0.5s ease-in-out forwards; }
     .money__img--slide-2-to-3 {
-      animation: second-to-third-slide .5s ease-in-out forwards; }
+      animation: second-to-third-slide 0.5s ease-in-out forwards; }
     .money__img--slide-3-to-1 {
-      animation: third-to-first-slide .5s ease-in-out forwards; }
+      animation: third-to-first-slide 0.5s ease-in-out forwards; }
 
 .download__icon {
   cursor: pointer;
@@ -297,12 +307,14 @@ body {
     text-align: center; }
     @media only screen and (min-width: 56.25em) {
       .contact__description {
+        width: 85%;
         text-align: justify;
         grid-row: 2 / 3;
         grid-column: 1 / 2; } }
   .contact__form {
     display: grid;
-    gap: 2rem;
+    row-gap: 2.4rem;
+    column-gap: 3rem;
     width: 100%;
     justify-self: center;
     grid-template-columns: 1fr; }

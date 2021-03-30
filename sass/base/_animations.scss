@@ -1,15 +1,15 @@
 @keyframes first-to-second-slide {
   from {
-    left: 40%;
+    left: 35%;
   }
   to {
-    left: 60%;
+    left: 65%;
   }
 }
 
 @keyframes second-to-third-slide {
   from {
-    left: 60%;
+    left: 65%;
     opacity: 0.5;
     z-index: 0;
     transform: translateX(-50%) scale(1);
@@ -18,7 +18,7 @@
     left: 50%;
     opacity: 1;
     z-index: 1;
-    transform: translate(-50%) scale(1.1);
+    transform: translate(-50%) scale(1.15);
   }
 }
 
@@ -27,10 +27,10 @@
     left: 50%;
     opacity: 1;
     z-index: 1;
-    transform: translate(-50%) scale(1.1);
+    transform: translate(-50%) scale(1.15);
   }
   to {
-    left: 40%;
+    left: 35%;
     opacity: 0.5;
     z-index: 0;
     transform: translate(-50%) scale(1);
