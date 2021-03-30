@@ -348,7 +348,12 @@ body {
   border: none;
   cursor: pointer;
   border-radius: .6rem;
-  text-align: center; }
+  text-align: center;
+  transition: transform .1s ease-in-out; }
+  .btn:hover {
+    transform: translateY(-2px); }
+  .btn:active {
+    transform: translateY(1px); }
   .btn:active, .btn:hover {
     outline: none; }
   .btn--white {
