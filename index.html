@@ -1,192 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cloudbudget</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link rel="stylesheet" href="css/style.css" />
-  <script  src="js/main.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap" rel="stylesheet" />
-  <title>Cloudbudget</title>
-</head>
-
-<body>
-  <section class="main" id="main">
-    <header class="header">
-      <div class="logo">
-        <svg class="logo__icon">
-          <use href="img/svg/sprite.svg#logo"></use>
-        </svg>
-        <p class="logo__text">CloudBudget</p>
+  <body>
+    <section class="main" id="main">
+      <header class="header">
+        <div class="logo">
+          <svg class="logo__icon">
+            <use href="img/svg/sprite.svg#logo"></use>
+          </svg>
+          <p class="logo__text">CloudBudget</p>
+        </div>
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="mobile-nav mobile-nav--closed">
+          <ul class="mobile-nav__items">
+            <li class="mobile-nav__item mobile-nav__item--active">overview</li>
+            <li class="mobile-nav__item"><a href="#features">features</a></li>
+            <li class="mobile-nav__item">
+              <a href="#technology">technology</a>
+            </li>
+            <li class="mobile-nav__item"><a href="#contact">contact</a></li>
+            <li class="mobile-nav__item">sign up</li>
+          </ul>
+        </nav>
+        <nav class="desktop-nav">
+          <ul class="desktop-nav__items">
+            <li class="desktop-nav__item desktop-nav__item--active">
+              overview
+            </li>
+            <li class="desktop-nav__item"><a href="#features">features</a></li>
+            <li class="desktop-nav__item">
+              <a href="#technology">technology</a>
+            </li>
+            <li class="desktop-nav__item"><a href="#contact">contact</a></li>
+            <li class="desktop-nav__item">sign up</li>
+          </ul>
+        </nav>
+      </header>
+      <div class="main__content">
+        <h1 class="main-heading">CloudBudget</h1>
+        <p class="main__content__text">
+          Cloud budget management for everyone. Only €69.95 a Month After a 7
+          Day Trial of Up to €4.99
+        </p>
+        <button class="btn btn--white">SIGN UP</button>
       </div>
-      <div class="burger">
-        <span></span>
-        <span></span>
-        <span></span>
+    </section>
+    <section class="features" id="features">
+      <h2 class="section-heading">Features</h2>
+      <div class="features__items">
+        <div class="features__item">
+          <img
+            src="img/feature-1.png"
+            alt="Money in hands"
+            class="features__img"
+          />
+          <div class="features__content">
+            <h3 class="heading-3">Supports All Currencies and Cards</h3>
+            <p class="paragraph-sm">
+              We support all popular currencies and is fully customizable to add
+            </p>
+            <p class="features__content__more">Read More</p>
+          </div>
+        </div>
+        <div class="features__item">
+          <img
+            src="img/feature-2.png"
+            alt="Writing on phone"
+            class="features__img"
+          />
+          <div class="features__content">
+            <h3 class="heading-3">Manage your expenses on the go</h3>
+            <p class="paragraph-sm">
+              You can access your account from anywhere in the world on any
+              device
+            </p>
+            <p class="features__content__more">Read More</p>
+          </div>
+        </div>
+        <div class="features__item">
+          <img src="img/feature-3.png" alt="A corridor" class="features__img" />
+          <div class="features__content">
+            <h3 class="heading-3">Cloud Budget Management Software</h3>
+            <p class="paragraph-sm">
+              Our software is made so you can access and manage your budget
+            </p>
+            <p class="features__content__more">Read More</p>
+          </div>
+        </div>
       </div>
-      <nav class="mobile-nav mobile-nav--closed">
-        <ul class="mobile-nav__items">
-          <li class="mobile-nav__item mobile-nav__item--active">
-            overview
-          </li>
-          <li class="mobile-nav__item"><a href="#features">features</a></li>
-          <li class="mobile-nav__item">
-            <a href="#technology">technology</a>
-          </li>
-          <li class="mobile-nav__item"><a href="#contact">contact</a></li>
-          <li class="mobile-nav__item">sign up</li>
-        </ul>
-      </nav>
-      <nav class="desktop-nav">
-        <ul class="desktop-nav__items">
-          <li class="desktop-nav__item desktop-nav__item--active">
-            overview
-          </li>
-          <li class="desktop-nav__item"><a href="#features">features</a></li>
-          <li class="desktop-nav__item">
-            <a href="#technology">technology</a>
-          </li>
-          <li class="desktop-nav__item"><a href="#contact">contact</a></li>
-          <li class="desktop-nav__item">sign up</li>
-        </ul>
-      </nav>
-    </header>
-    <div class="main__content">
-      <h1 class="main-heading">CloudBudget</h1>
-      <p class="main__content__text">
-        Cloud budget management for everyone. Only €69.95 a Month After a 7
-        Day Trial of Up to €4.99
+    </section>
+    <section class="technology" id="technology">
+      <h2 class="section-heading">Technology</h2>
+      <div class="technology__items">
+        <div class="technology__item">
+          <p class="technology__number">01</p>
+          <svg class="technology__icon">
+            <use href="img/svg/sprite.svg#icon-cloud"></use>
+          </svg>
+          <h3 class="heading-3">Cloud Storage</h3>
+          <p class="paragraph-sm technology__text">
+            Access your account from anywhere in the world on any device
+          </p>
+        </div>
+        <div class="technology__item">
+          <p class="technology__number">02</p>
+          <svg class="technology__icon">
+            <use href="img/svg/sprite.svg#icon-secure"></use>
+          </svg>
+          <h3 class="heading-3">Secure</h3>
+          <p class="paragraph-sm technology__text">
+            All your information is stored on secure cloud servers
+          </p>
+        </div>
+        <div class="technology__item">
+          <p class="technology__number">03</p>
+          <svg class="technology__icon">
+            <use href="img/svg/sprite.svg#icon-pdf"></use>
+          </svg>
+          <h3 class="heading-3">PDF Download</h3>
+          <p class="paragraph-sm technology__text">
+            Access your account from anywhere in the world on any device
+          </p>
+        </div>
+        <div class="technology__item">
+          <p class="technology__number">04</p>
+          <svg class="technology__icon">
+            <use href="img/svg/sprite.svg#icon-csv"></use>
+          </svg>
+          <h3 class="heading-3">CSV Download</h3>
+          <p class="paragraph-sm technology__text">
+            All your information is stored on secure cloud servers
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="money" id="money">
+      <h2 class="money__heading">Stay focused on saving money</h2>
+      <p class="money__description">
+        It is important to stay focused on saving money in any way you can. We
+        help you monitor your spending habits so you can easily spot and cut any
+        unnecessary expenses. Simply join today to get started!
       </p>
-      <button class="btn btn--white">SIGN UP</button>
-    </div>
-  </section>
-  <section class="features" id="features">
-    <h2 class="section-heading">Features</h2>
-    <div class="features__items">
-      <div class="features__item">
-        <img src="img/feature-1.png" alt="Money in hands" class="features__img" />
-        <div class="features__content">
-          <h3 class="heading-3">Supports All Currencies and Cards</h3>
-          <p class="paragraph-sm">
-            We support all popular currencies and is fully customizable to add
-          </p>
-          <p class="features__content__more">Read More</p>
-        </div>
-      </div>
-      <div class="features__item">
-        <img src="img/feature-2.png" alt="Writing on phone" class="features__img" />
-        <div class="features__content">
-          <h3 class="heading-3">Manage your expenses on the go</h3>
-          <p class="paragraph-sm">
-            You can access your account from anywhere in the world on any
-            device
-          </p>
-          <p class="features__content__more">Read More</p>
-        </div>
-      </div>
-      <div class="features__item">
-        <img src="img/feature-3.png" alt="A corridor" class="features__img" />
-        <div class="features__content">
-          <h3 class="heading-3">Cloud Budget Management Software</h3>
-          <p class="paragraph-sm">
-            Our software is made so you can access and manage your budget
-          </p>
-          <p class="features__content__more">Read More</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="technology" id="technology">
-    <h2 class="section-heading">Technology</h2>
-    <div class="technology__items">
-      <div class="technology__item">
-        <p class="technology__number">01</p>
-        <svg class="technology__icon">
-          <use href="img/svg/sprite.svg#icon-cloud"></use>
+      <div class="money__downloads">
+        <svg class="download__icon">
+          <use href="img/svg/sprite.svg#icon-google-play"></use>
         </svg>
-        <h3 class="heading-3">Cloud Storage</h3>
-        <p class="paragraph-sm technology__text">
-          Access your account from anywhere in the world on any device
-        </p>
-      </div>
-      <div class="technology__item">
-        <p class="technology__number">02</p>
-        <svg class="technology__icon">
-          <use href="img/svg/sprite.svg#icon-secure"></use>
+        <svg class="download__icon">
+          <use href="img/svg/sprite.svg#logo-apple-store"></use>
         </svg>
-        <h3 class="heading-3">Secure</h3>
-        <p class="paragraph-sm technology__text">
-          All your information is stored on secure cloud servers
-        </p>
-      </div>
-      <div class="technology__item">
-        <p class="technology__number">03</p>
-        <svg class="technology__icon">
-          <use href="img/svg/sprite.svg#icon-pdf"></use>
+        <svg class="download__icon">
+          <use href="img/svg/sprite.svg#logo-windows"></use>
         </svg>
-        <h3 class="heading-3">PDF Download</h3>
-        <p class="paragraph-sm technology__text">
-          Access your account from anywhere in the world on any device
-        </p>
       </div>
-      <div class="technology__item">
-        <p class="technology__number">04</p>
-        <svg class="technology__icon">
-          <use href="img/svg/sprite.svg#icon-csv"></use>
-        </svg>
-        <h3 class="heading-3">CSV Download</h3>
-        <p class="paragraph-sm technology__text">
-          All your information is stored on secure cloud servers
-        </p>
+      <div class="money__images">
+        <img
+          src="img/money-1.png"
+          alt="Money 1"
+          class="money__img money__img--1"
+        />
+        <img
+        src="img/money-2.png"
+        alt="Money 2"
+        class="money__img money__img--2"
+        />
+        <img
+          src="img/money-3.png"
+          alt="Money 3"
+          class="money__img money__img--3"
+        />
       </div>
-    </div>
-  </section>
-  <section class="money" id="money">
-    <h2 class="money__heading">Stay focused on saving money</h2>
-    <p class="money__description">
-      It is important to stay focused on saving money in any way you can. We
-      help you monitor your spending habits so you can easily spot and cut any
-      unnecessary expenses. Simply join today to get started!
-    </p>
-    <div class="money__downloads">
-      <svg class="download__icon">
-        <use href="img/svg/sprite.svg#icon-google-play"></use>
-      </svg>
-      <svg class="download__icon">
-        <use href="img/svg/sprite.svg#logo-apple-store"></use>
-      </svg>
-      <svg class="download__icon">
-        <use href="img/svg/sprite.svg#logo-windows"></use>
-      </svg>
-    </div>
-    <div class="money__images">
-      <img src="img/money-1.png" alt="Money 1" class="money__img money__img--1" /><img src="img/money-2.png"
-        alt="Money 2" class="money__img money__img--2" /><img src="img/money-3.png" alt="Money 3"
-        class="money__img money__img--3" />
-    </div>
-  </section>
-  <section class="contact" id="contact">
-    <h2 class="contact__heading">Contact</h2>
-    <p class="contact__description">
-      Questions or concerns? Just fill out the form below and our support team
-      will get back to you within 24 hours
-    </p>
-    <form class="contact__form" id="contact__form">
-      <input required type="text" class="contact__item contact__firstname" placeholder="First Name" />
-      <input required type="text" class="contact__item contact__lastname" placeholder="Last Name" />
-      <input required type="text" class="contact__item contact__phone" placeholder="Phone Number" />
-      <select required class="contact__item contact__service">
-        <option value="" disabled hidden selected>Select Service</option>
-        <option>Service 1</option>
-        <option>Service 2</option>
-        <option>Service 3</option>
-        <option>Service 4</option>
-      </select>
-      <button class="btn btn--red contact__btn">SUBMIT NOW</button>
-    </form>
-  </section>
-</body>
-
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="contact__heading">Contact</h2>
+      <p class="contact__description">
+        Questions or concerns? Just fill out the form below and our support team
+        will get back to you within 24 hours
+      </p>
+      <form class="contact__form" id="contact__form">
+        <input
+          required
+          type="text"
+          name="firstname"
+          class="contact__item contact__firstname"
+          placeholder="First Name"
+        />
+        <input
+          required
+          type="text"
+          name="lastname"
+          class="contact__item contact__lastname"
+          placeholder="Last Name"
+        />
+        <input
+          required
+          type="tel"
+          name="phone"
+          class="contact__item contact__phone"
+          placeholder="Phone Number"
+        />
+        <select required class="contact__item contact__service">
+          <option value="" disabled hidden selected>Select Service</option>
+          <option>Service 1</option>
+          <option>Service 2</option>
+          <option>Service 3</option>
+          <option>Service 4</option>
+        </select>
+        <button class="btn btn--red contact__btn">SUBMIT NOW</button>
+      </form>
+    </section>
+  </body>
 </html>

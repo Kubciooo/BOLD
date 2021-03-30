@@ -202,7 +202,10 @@ body {
   .money__images {
     position: relative;
     height: 16rem;
-    grid-row: 4 / 5; }
+    justify-self: center;
+    width: 80%;
+    grid-row: 4 / 5;
+    transition: all 0.2s; }
     @media only screen and (min-width: 75em) {
       .money__images {
         height: 25rem;
@@ -212,16 +215,26 @@ body {
     height: 100%;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    transition: all 0.2s;
+    cursor: pointer; }
     .money__img--1 {
       left: 40%;
       opacity: 0.5; }
-    .money__img--2 {
+    .money__img--3 {
       z-index: 1;
       transform: translateX(-50%) scale(1.1); }
-    .money__img--3 {
+    .money__img--2 {
       left: 60%;
       opacity: 0.5; }
+    .money__img--1:hover + .money__img--2 + .money__img--3, .money__img--2:hover + .money__img--3 {
+      z-index: 0;
+      opacity: 0.5;
+      transform: translateX(-50%) scale(1); }
+    .money__img:not(.money__img--3):hover {
+      z-index: 2;
+      opacity: 1;
+      transform: translate(-50%) scale(1.1); }
 
 .download__icon {
   cursor: pointer;

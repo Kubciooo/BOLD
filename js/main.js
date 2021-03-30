@@ -1,6 +1,8 @@
 const burger = document.querySelector(".burger");
 const mobileNav = document.querySelector(".mobile-nav");
 const mobileNavItems = document.querySelectorAll(".mobile-nav__item");
+const images = document.querySelectorAll(".money__img")
+
 
 const toggleMobileNav = () => {
   burger.classList.toggle("burger--active");
