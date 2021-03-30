@@ -101,7 +101,8 @@
       opacity: 0.5;
     }
 
-    &--1:hover + &--2 + &--3, &--2:hover + &--3  {
+    &--1:hover ~ &--3,
+    &--2:hover ~ &--3 {
       z-index: 0;
       opacity: 0.5;
       transform: translateX(-50%) scale(1);
@@ -112,6 +113,17 @@
       transform: translate(-50%) scale(1.1);
     }
 
+    &--slide-1-to-2 {
+      animation: first-to-second-slide .5s ease-in-out forwards;
+    }
+
+    &--slide-2-to-3 {
+      animation: second-to-third-slide .5s ease-in-out forwards;
+    }
+
+    &--slide-3-to-1 {
+      animation: third-to-first-slide .5s ease-in-out forwards;
+    }
   }
 }
 

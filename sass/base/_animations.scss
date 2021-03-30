@@ -1,0 +1,38 @@
+@keyframes first-to-second-slide {
+  from {
+    left: 40%;
+  }
+  to {
+    left: 60%;
+  }
+}
+
+@keyframes second-to-third-slide {
+  from {
+    left: 60%;
+    opacity: 0.5;
+    z-index: 0;
+    transform: translateX(-50%) scale(1);
+  }
+  to {
+    left: 50%;
+    opacity: 1;
+    z-index: 1;
+    transform: translate(-50%) scale(1.1);
+  }
+}
+
+@keyframes third-to-first-slide {
+  from {
+    left: 50%;
+    opacity: 1;
+    z-index: 1;
+    transform: translate(-50%) scale(1.1);
+  }
+  to {
+    left: 40%;
+    opacity: 0.5;
+    z-index: 0;
+    transform: translate(-50%) scale(1);
+  }
+}

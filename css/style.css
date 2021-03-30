@@ -1,3 +1,33 @@
+@keyframes first-to-second-slide {
+  from {
+    left: 40%; }
+  to {
+    left: 60%; } }
+
+@keyframes second-to-third-slide {
+  from {
+    left: 60%;
+    opacity: 0.5;
+    z-index: 0;
+    transform: translateX(-50%) scale(1); }
+  to {
+    left: 50%;
+    opacity: 1;
+    z-index: 1;
+    transform: translate(-50%) scale(1.1); } }
+
+@keyframes third-to-first-slide {
+  from {
+    left: 50%;
+    opacity: 1;
+    z-index: 1;
+    transform: translate(-50%) scale(1.1); }
+  to {
+    left: 40%;
+    opacity: 0.5;
+    z-index: 0;
+    transform: translate(-50%) scale(1); } }
+
 * {
   margin: 0;
   padding: 0; }
@@ -227,7 +257,8 @@ body {
     .money__img--2 {
       left: 60%;
       opacity: 0.5; }
-    .money__img--1:hover + .money__img--2 + .money__img--3, .money__img--2:hover + .money__img--3 {
+    .money__img--1:hover ~ .money__img--3,
+    .money__img--2:hover ~ .money__img--3 {
       z-index: 0;
       opacity: 0.5;
       transform: translateX(-50%) scale(1); }
@@ -235,6 +266,12 @@ body {
       z-index: 2;
       opacity: 1;
       transform: translate(-50%) scale(1.1); }
+    .money__img--slide-1-to-2 {
+      animation: first-to-second-slide .5s ease-in-out forwards; }
+    .money__img--slide-2-to-3 {
+      animation: second-to-third-slide .5s ease-in-out forwards; }
+    .money__img--slide-3-to-1 {
+      animation: third-to-first-slide .5s ease-in-out forwards; }
 
 .download__icon {
   cursor: pointer;

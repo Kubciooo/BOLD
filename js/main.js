@@ -15,4 +15,6 @@ for (const navItem of mobileNavItems) {
   navItem.addEventListener("click", toggleMobileNav);
 }
 
-
+images[0].classList.toggle('money__img--slide-1-to-2');
+images[1].classList.toggle('money__img--slide-2-to-3');
+images[2].classList.toggle('money__img--slide-3-to-1');
