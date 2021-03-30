@@ -136,8 +136,8 @@ body {
   .technology__text {
     width: 60%; }
   .technology__icon {
-    width: 8rem;
-    height: 8rem;
+    height: 5.5rem;
+    width: 6rem;
     fill: #D52047; }
   .technology__number {
     font-size: 10rem;
@@ -305,6 +305,38 @@ body {
       .contact__btn {
         justify-self: left; } }
 
+.main {
+  position: relative;
+  padding: 4rem;
+  height: 100vh;
+  background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8)), url("../../img/hero.png");
+  background-size: cover; }
+  @media only screen and (min-width: 56.25em) {
+    .main {
+      padding: 6rem 16rem 10rem 16rem; } }
+  .main__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main__content > *:not(:last-child) {
+      margin-bottom: 4rem; }
+    .main__content__text {
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 1.5; }
+      @media only screen and (min-width: 75em) {
+        .main__content__text {
+          font-size: 2rem; } }
+      @media only screen and (min-width: 56.25em) {
+        .main__content__text {
+          font-size: 2.4rem; } }
+
 .burger {
   position: absolute;
   bottom: 50%;
@@ -425,35 +457,3 @@ body {
   .btn--red {
     background-color: #ED4C5C;
     color: white; }
-
-.main {
-  position: relative;
-  padding: 4rem;
-  height: 100vh;
-  background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8)), url("../../img/hero.png");
-  background-size: cover; }
-  @media only screen and (min-width: 56.25em) {
-    .main {
-      padding: 6rem 16rem 10rem 16rem; } }
-  .main__content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .main__content > *:not(:last-child) {
-      margin-bottom: 4rem; }
-    .main__content__text {
-      color: #FFFFFF;
-      text-align: center;
-      font-size: 1.5rem;
-      font-weight: 600;
-      line-height: 1.5; }
-      @media only screen and (min-width: 75em) {
-        .main__content__text {
-          font-size: 2rem; } }
-      @media only screen and (min-width: 56.25em) {
-        .main__content__text {
-          font-size: 2.4rem; } }

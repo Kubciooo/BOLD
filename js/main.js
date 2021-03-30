@@ -12,3 +12,5 @@ burger.addEventListener("click", toggleMobileNav);
 for (const navItem of mobileNavItems) {
   navItem.addEventListener("click", toggleMobileNav);
 }
+
+
