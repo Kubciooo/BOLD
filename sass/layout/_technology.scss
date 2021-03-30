@@ -1,52 +1,48 @@
-.technology { 
-    
-    padding: $main-padding-mobile;
+.technology {
+  padding: $main-padding-mobile;
+
+  @include respond(tab-port) {
+    padding: $main-padding-desktop;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
 
     @include respond(tab-port) {
-        padding: $main-padding-desktop;
+      grid-template-columns: 1fr 1fr;
     }
 
-
-    &__items { 
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 3rem;
-
-        @include respond(tab-port) { 
-            grid-template-columns: 1fr 1fr;
-        }
-
-        @include respond(laptop) {
-            grid-template-columns: repeat(4,1fr);
-        }
-        justify-content: center;
-        justify-items: center;
+    @include respond(laptop) {
+      grid-template-columns: repeat(4, 1fr);
     }
+    justify-content: center;
+    justify-items: center;
+  }
 
-    &__item { 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    }
+  &__text {
+    width: 75%;
+  }
 
-    &__text { 
-        width: 75%;
-    }
+  &__icon {
+    height: 5.5rem;
+    width: 6rem;
+    fill: $color-primary;
+  }
 
-    &__icon {
-        height: 5.5rem;
-        width: 6rem;
-        fill: $color-primary;
-
-    }
- 
-    &__number {
-        font-size: 10rem;
-        font-weight: 900;
-        color: $color-grey-dark;
-        opacity: .08; 
-        line-height: .1;
-        margin-top: 5rem;
-    }
+  &__number {
+    font-size: 10rem;
+    font-weight: 900;
+    color: $color-grey-dark;
+    opacity: 0.08;
+    line-height: 0.1;
+    margin-top: 5rem;
+  }
 }

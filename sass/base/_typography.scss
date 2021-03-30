@@ -1,36 +1,36 @@
 .main-heading {
-    font-size: 3rem;
-    letter-spacing: 0.05em;
-    color: $color-white; 
-    text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.05em;
+  color: $color-white;
+  text-transform: uppercase;
 
-    @include respond(tab-port) { 
-        font-size: 6rem;            
-    }
+  @include respond(tab-port) {
+    font-size: 6rem;
+  }
 
-    @include respond(tab-land) {
-        font-size: 7rem; 
-    }
-} 
-
-.section-heading { 
-    margin-bottom: 5rem;
-    width: 100%;
-    display: inline-block; // preventing margin collapsing 
-    font-size: 3.6rem;
-    text-align: center;
+  @include respond(tab-land) {
+    font-size: 7rem;
+  }
 }
 
-.heading-3 { 
-    font-size:  1.8rem;
-    font-weight: 700;
-    text-align: center;
-    color: $color-grey-dark;
-    margin-bottom: 1rem;
+.section-heading {
+  margin-bottom: 5rem;
+  width: 100%;
+  display: inline-block; // preventing margin collapsing
+  font-size: 3.6rem;
+  text-align: center;
 }
 
-.paragraph-sm { 
-    font-size: 1.2rem;
-    text-align: center;
-    color: $color-grey-dark;
+.heading-3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: $color-grey-dark;
+  margin-bottom: 1rem;
+}
+
+.paragraph-sm {
+  font-size: 1.2rem;
+  text-align: center;
+  color: $color-grey-dark;
 }
