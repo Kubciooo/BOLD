@@ -306,20 +306,26 @@ body {
 
 .burger {
   position: relative;
-  height: 2px;
+  height: 2rem;
   width: 3rem;
-  background-color: #FFFFFF; }
-  .burger::before, .burger::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 2px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .burger span {
+    background-color: #FFFFFF;
+    height: .2rem;
     width: 3rem;
-    background-color: inherit; }
-  .burger::before {
-    top: 0.7rem; }
-  .burger::after {
-    top: -0.7rem; }
+    transform-origin: 0%;
+    transition: transform .1s ease-in-out; }
+  .burger--active span:first-child {
+    transform-origin: 0%;
+    transform: rotate(45deg) translateX(-3.5px) translateY(-1px); }
+  .burger--active span:nth-of-type(2) {
+    display: none; }
+  .burger--active span:last-child {
+    transform-origin: 0% 100%;
+    transform: rotate(-45deg); }
   @media only screen and (min-width: 75em) {
     .burger {
       display: none; } }
