@@ -5,6 +5,7 @@
     border: none;
     cursor: pointer;
     border-radius: .6rem;
+    text-align: center;
 
     &:active, &:hover { 
         outline: none;
@@ -13,8 +14,12 @@
 
     &--white { 
         background: $color-white;
-        text-align: center;
         color: $color-primary;
+    }
+
+    &--red { 
+        background-color: $color-primary-light;
+        color: white; 
     }
 
 }

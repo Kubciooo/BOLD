@@ -150,17 +150,17 @@
     <p class="contact__description">Questions or concerns? Just fill out the form below and our support team will get
       back to you within 24 hours</p>
       <form class="contact__form" id="contact__form">
-        <input required type="text" class="contact__firstname" placeholder="First Name">
-        <input required type="text" class="contact__lastname" placeholder="Last Name">
-        <input required type="number" class="contact__number" placeholder="Phone Number">
-        <select required class="contact__service">
-          <option value="" hidden selected >Select Service</option>
+        <input required type="text" class="contact__item contact__firstname" placeholder="First Name">
+        <input required type="text" class="contact__item contact__lastname" placeholder="Last Name">
+        <input required type="text" class="contact__item" placeholder="Phone Number">
+        <select required class="contact__item contact__service">
+          <option value="" disabled hidden selected >Select Service</option>
           <option>Service 1</option>
           <option>Service 2</option>
           <option>Service 3</option>
           <option>Service 4</option>
         </select>
-        <button class="btn btn--red">SUBMIT NOW</button>
+        <button class="btn btn--red contact__btn">SUBMIT NOW</button>
       </form>
       
   </section>

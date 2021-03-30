@@ -1,0 +1,63 @@
+.contact { 
+    padding: 4rem; 
+
+    display: grid;
+
+
+    @include respond(tab-land) { 
+        padding: 17.5rem 11.5rem 16.5rem 8rem; 
+    }
+
+    &__heading { 
+        font-weight: 600;
+        font-size: 3.6rem;
+        margin-bottom: 3rem;
+        text-align: center;
+        
+    }
+
+    &__description {
+        font-size: 1.4rem;
+        margin-bottom: 3rem;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    &__form { 
+        display: grid;
+        gap: 2rem; 
+        width: 100%;
+        grid-template-columns: 1fr;
+
+        
+    }
+
+
+    &__item { 
+
+        padding: 2rem 3rem;
+        border-radius: .6rem;
+        outline: none;
+        border: 1px solid $color-black; 
+        &::placeholder {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__service { 
+        background-color: $color-white;
+        font-size: 1.6rem;
+        appearance: none;
+
+        &:invalid { 
+            color: $color-grey-light-2;
+        }
+        option {
+            font-size: inherit;
+        }
+    }
+    
+    &__btn { 
+        justify-self: center;
+    }
+}

@@ -25,7 +25,6 @@ body {
       font-size: 7rem; } }
 
 .section-heading {
-  margin-top: 6rem;
   margin-bottom: 5rem;
   width: 100%;
   display: inline-block;
@@ -63,7 +62,7 @@ body {
 
 .features {
   background-color: #FAFAFA;
-  padding: 2rem; }
+  padding: 6rem 4rem; }
   @media only screen and (min-width: 56.25em) {
     .features {
       padding: 6rem 16rem 10rem 16rem; } }
@@ -102,7 +101,7 @@ body {
       font-weight: 700; }
 
 .technology {
-  padding: 2rem; }
+  padding: 6rem 4rem; }
   @media only screen and (min-width: 56.25em) {
     .technology {
       padding: 6rem 16rem 10rem 16rem; } }
@@ -213,6 +212,45 @@ body {
   width: 3.2rem;
   height: 3.2rem; }
 
+.contact {
+  padding: 4rem;
+  display: grid; }
+  @media only screen and (min-width: 75em) {
+    .contact {
+      padding: 17.5rem 11.5rem 16.5rem 8rem; } }
+  .contact__heading {
+    font-weight: 600;
+    font-size: 3.6rem;
+    margin-bottom: 3rem;
+    text-align: center; }
+  .contact__description {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    line-height: 1.4;
+    text-align: center; }
+  .contact__form {
+    display: grid;
+    gap: 2rem;
+    width: 100%;
+    grid-template-columns: 1fr; }
+  .contact__item {
+    padding: 2rem 3rem;
+    border-radius: .6rem;
+    outline: none;
+    border: 1px solid #000000; }
+    .contact__item::placeholder {
+      font-size: 1.6rem; }
+  .contact__service {
+    background-color: #FFFFFF;
+    font-size: 1.6rem;
+    appearance: none; }
+    .contact__service:invalid {
+      color: rgba(19, 39, 67, 0.58); }
+    .contact__service option {
+      font-size: inherit; }
+  .contact__btn {
+    justify-self: center; }
+
 .burger {
   position: relative;
   height: 2px;
@@ -262,17 +300,20 @@ body {
   padding: 1rem 2rem;
   border: none;
   cursor: pointer;
-  border-radius: .6rem; }
+  border-radius: .6rem;
+  text-align: center; }
   .btn:active, .btn:hover {
     outline: none; }
   .btn--white {
     background: #FFFFFF;
-    text-align: center;
     color: #D52047; }
+  .btn--red {
+    background-color: #ED4C5C;
+    color: white; }
 
 .main {
   position: relative;
-  padding: 2rem;
+  padding: 6rem 4rem;
   height: 100vh;
   background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8)), url("../../img/hero.png");
   background-size: cover; }
