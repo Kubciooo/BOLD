@@ -1,57 +1,71 @@
-.burger { 
-    position: relative;
+.burger {
+  position: relative;
+  height: 2px;
+  width: 3rem;
+  background-color: $color-white;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
     height: 2px;
     width: 3rem;
-    background-color: $color-white;
+    background-color: inherit;
+  }
+  &::before {
+    top: 0.7rem;
+  }
+  &::after {
+    top: -0.7rem;
+  }
 
-    &::before, &::after { 
-        content: ""; 
-        position: absolute;
-        left: 0; 
-        height: 2px;
-        width: 3rem; 
-        background-color: inherit;
-    }
-    &::before { 
-        top: .7rem; 
-    }
-    &::after { 
-        top: -.7rem;
-    }
+  @include respond(tab-land) {
+    display: none;
+  }
 }
 
-.navigation { 
-    position: absolute;
-    top: 0; 
-    left: 0;
-    height: 100vh;
-    width: 100vw;
+.desktop-nav {
+  display: none;
 
-    &__items { 
-        list-style: none;
-        height: 100%;
-        width: 100%;
-        background-color: $color-primary;
+  @include respond(tab-land) {
+    display: inline-block;
+  }
+  &__items {
+    list-style: none;
+    display: flex;
+  }
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+  &__item {
+    position: relative;
+    color: $color-white;
+    margin: 0 1rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    cursor: pointer;
+
+    &--active {
+      font-weight: 700;
     }
 
-    &__item { 
-        color: $color-white; 
-        margin: 2rem 0;
-        font-size: 1.4rem;
-        text-transform: uppercase;
-        font-weight: 300;
-
-        &--active { 
-            font-weight: 700;
-        }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 2px;
+      width: 3px;
+      background-color: $color-white;
+      transform: scaleY(0);
+      transition: transform .2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
     }
-
-    &--closed { 
-        display: none; 
-    }
+  }
+  &__item:hover::before {
+      transform: scaleY(1);
+      width: 100%;
+  }
+  &--closed {
+    display: none;
+  }
 }
