@@ -130,6 +130,7 @@ body {
     fill: #D52047; }
   .technology__number {
     font-size: 10rem;
+    font-weight: 900;
     color: #101010;
     opacity: .08;
     line-height: .1;
