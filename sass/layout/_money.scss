@@ -101,17 +101,17 @@
       opacity: 0.5;
     }
 
-    &--1:hover ~ &--3,
-    &--2:hover ~ &--3 {
-      z-index: 0;
-      opacity: 0.5;
-      transform: translateX(-50%) scale(1);
-    }
-    &:not(&--3):hover {
-      z-index: 2;
-      opacity: 1;
-      transform: translate(-50%) scale(1.1);
-    }
+    // &--1:hover ~ &--3,
+    // &--2:hover ~ &--3 {
+    //   z-index: 0;
+    //   opacity: 0.5;
+    //   transform: translateX(-50%) scale(1);
+    // }
+    // &:not(&--3):hover {
+    //   z-index: 2;
+    //   opacity: 1;
+    //   transform: translate(-50%) scale(1.1);
+    // }
 
     &--slide-1-to-2 {
       animation: first-to-second-slide .5s ease-in-out forwards;

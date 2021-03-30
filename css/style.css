@@ -257,15 +257,6 @@ body {
     .money__img--2 {
       left: 60%;
       opacity: 0.5; }
-    .money__img--1:hover ~ .money__img--3,
-    .money__img--2:hover ~ .money__img--3 {
-      z-index: 0;
-      opacity: 0.5;
-      transform: translateX(-50%) scale(1); }
-    .money__img:not(.money__img--3):hover {
-      z-index: 2;
-      opacity: 1;
-      transform: translate(-50%) scale(1.1); }
     .money__img--slide-1-to-2 {
       animation: first-to-second-slide .5s ease-in-out forwards; }
     .money__img--slide-2-to-3 {
